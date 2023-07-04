@@ -1,1 +1,26 @@
-<p>results works!</p>
+<div class="main">
+    <div class="card">
+        <div class="card-header">
+            Results
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Factoria F5</h5>
+          <table>
+            <thead>
+                <tr>
+                <th>Name</th>
+                <th>Email Address</th>
+                </tr>
+            </thead>
+                <tbody>
+                    <tr *ngFor="let formData of formDataArray">
+                    <td>{{ formData.name }}</td>
+                    <td>{{ formData.email }}</td>
+                    </tr>
+                </tbody>
+            </table>
+          
+          
+        </div>
+      </div>
+    </div>

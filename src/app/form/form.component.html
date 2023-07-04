@@ -5,6 +5,7 @@
     </div>
     <div class="card-body">
       <h5 class="card-title">Factoria F5</h5>
+      
       <p class="card-text">Angular Components Comunication</p>
       <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Name</label>
@@ -18,7 +19,8 @@
         <label for="exampleFormControlInput1" class="form-label">Password</label>
         <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="******">
       </div>
-      <a href="#" class="btn btn-primary">Send</a>
+      <a [routerLink]="'results'" class="btn btn-primary" (click)="registerData()">Send</a>
     </div>
+    <a routerLink="results">Ver resultados</a>
   </div>
 </div>
